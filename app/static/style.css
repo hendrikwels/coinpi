@@ -1,0 +1,63 @@
+
+html, body { 
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-size: 4em;
+}
+
+.get-bitcoin{
+    background-color: #FBB900;
+    transform: translateY(0);
+    transition: height 0.6s;
+}
+
+    .get-bitcoin.go{
+        transform: translateY(0%);
+    }
+
+
+
+.get-bitcoin{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.get-bitcoin-button{
+    border-radius: 100%;
+    height: 350px;
+    width: 350px;
+    align-self: center;
+}
+
+.get-bitcoin-button{
+    background-color: #2F2D27;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s ease;
+}
+
+    .get-bitcoin-button h1{
+        color: #FBB900;
+        align-self: center;
+    }
+
+.video{
+	border-radius: 100%;
+	height: 350px;
+    width: 350px;
+	}
+
+
+
+
+
+
+
+

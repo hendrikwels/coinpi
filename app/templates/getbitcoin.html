@@ -1,0 +1,40 @@
+{% extends "template.html" %}
+
+{% block head %}
+
+
+	<script type="text/javascript">
+		
+	
+			$("document").ready(function(){
+		  		setInterval(function(){
+		        $.ajax({
+		            url:"/getbitcoin/",
+		            success:function(result){
+		                $(".get-bitcoin").html(result);
+		            }
+			        });
+			    }, 2000);
+			});
+
+
+	</script>
+
+{% endblock %}
+
+
+{% block content %}
+
+ 	
+	  	<a id="link" href="/exchange/">
+		    <div class="get-bitcoin"> 
+		      <div class="get-bitcoin-button">
+		        <h1 class="bitcoin-header">{{ balance }}</h1>
+		        <!-- <h1 id="result"></h1> -->
+		      </div>
+		    </div>
+		</a>
+	
+
+
+{% endblock content %}
